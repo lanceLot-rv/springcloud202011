@@ -2,6 +2,7 @@ package com.lsc.springcloud.service;
 
 import com.lsc.springcloud.entities.ConfigTestPo;
 import com.lsc.springcloud.mapper.ConfigTestMapper;
+import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Aspect
 public class ConfigTestService {
     @Autowired
     private ConfigTestMapper configTestMapper;
